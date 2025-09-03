@@ -22,4 +22,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: tonpseudo/mon-bot-discord:latest
+          tags: soan44/mon-bot-discord:latest
