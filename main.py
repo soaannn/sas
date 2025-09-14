@@ -13,7 +13,7 @@ intents.members = True
 bot = commands.Bot(command_prefix=".", intents=intents)
 
 # ID du rôle requis
-ROLE_ID = 1396961119930683427
+ROLE_ID = 1360976279540596736
 
 
 @bot.event
@@ -23,9 +23,7 @@ async def on_ready():
 
 @bot.command()
 async def m(ctx, *, message: str = None):
-    """Publie un message dans le channel et supprime celui de l'utilisateur.
-    Si des fichiers/images sont attachés, le bot les repost aussi.
-    """
+    """-"""
     role = ctx.guild.get_role(ROLE_ID)
     if role is None:
         return  # rôle introuvable, on fait rien
